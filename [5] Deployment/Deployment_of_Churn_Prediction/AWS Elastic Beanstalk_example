@@ -8,3 +8,6 @@ eb init -p docker churn-serving
 eb create churn-serving-env
 
 4. Тест приложения в deploying_churn_prediction.ipynb
+
+5. Выключение сервиса
+eb terminate churn-serving-env
