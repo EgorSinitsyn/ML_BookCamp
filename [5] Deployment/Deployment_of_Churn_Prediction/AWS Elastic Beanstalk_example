@@ -1,0 +1,10 @@
+1. Входим в витруальную среду
+pipenv shell
+
+2. Запускаем команду инициализации сервиса
+eb init -p docker churn-serving
+
+3. Тест приложения локально
+eb create churn-serving-env
+
+4. Тест приложения в deploying_churn_prediction.ipynb
