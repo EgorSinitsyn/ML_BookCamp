@@ -1,17 +1,17 @@
-FROM python:3.9-slim
+FROM python:3.11
 
 ENV PYTHONUNBUFFERED=TRUE
 
-RUN pip --no-cache-dir install pipenv
-
 WORKDIR /app
 
-COPY ["Pipfile", "Pipfile.lock", "./"]
-RUN pipenv install --deploy --system && \
-    rm -rf /root/.cache
+RUN apt-get update && apt-get install -y libhdf5-dev
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY "gateway_service.py" "gateway_service.py"
 
 EXPOSE 9696
 
-ENTRYPOINT ["gunicorn", "--bind", "0.0.0.0:9696", "gateway_service:app"]
+ENTRYPOINT ["gunicorn", "--bind", "0.0.0.0:9696", "gateway_service.py:app"]
