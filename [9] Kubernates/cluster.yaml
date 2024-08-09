@@ -3,8 +3,8 @@ kind: ClusterConfig
 
 metadata:
   name: ml-bookcamp-eks
-  region: us-east-1
-  version: "1.30"
+  region: eu-west-1
+  version: "1.18"
 
 nodeGroups:
   - name: ng

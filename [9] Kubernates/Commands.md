@@ -35,7 +35,7 @@ pipenv install flask==3.0.0 gunicorn==22.0.0 keras-image-helper==0.0.1 grpcio te
 
 5) Развертывание в AWS Elastic Kubernates Service
 # Развертывание кластера
-ekctl create cluster -f cluster.yaml
+eksctl create cluster -f cluster.yaml
 # Настройка kubectl для получения доступа
 aws eks --region us-east-1 update-kubeconfig --name ml-bookcamp-eks
 # Подключение к кластеру
@@ -60,7 +60,7 @@ kubectl get pods
 kubectl get services
 # Чтобы увидеть внешний url сервиса
 kubectl describe service serving-gateway
-# LoadBalancer Ingress:     ae0b820c610ad4386ac3f2f4d7602ae5-1939140193.us-east-1.elb.amazonaws.com
+## LoadBalancer Ingress:     ae0b820c610ad4386ac3f2f4d7602ae5-1939140193.us-east-1.elb.amazonaws.com
 
 # URL сервиса
 tf-serving-clothing-model.default.svc.cluster.local
