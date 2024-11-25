@@ -7,7 +7,7 @@ spec:
     predictor:
       serviceAccountName: sa
       tensorflow:
-        storageUri: "s3://mlbookcamp-models-alexey/clothing-model"
+        storageUri: "s3://mlbookcamp-models-egor/clothing-model"
     transformer:
       custom:
         container:
