@@ -1,89 +1,83 @@
 # Machine Learning Bookcamp
 
-The code from the Machine Learning Bookcamp book
+Мои проекты по книге А.Григорьева "Машинное обучение. Портфолио реальных проектов" (the Machine Learning Bookcamp book)
 
-Useful links: 
+Страница автора:
+* [https://github.com/alexeygrigorev](https://github.com/alexeygrigorev)
 
-* [https://mlbookcamp.com](https://mlbookcamp.com): supplimentary materials
-* [https://github.com/alexeygrigorev](https://github.com/alexeygrigorev): author's GitHub page
+# Папки:
 
-# Chapters
+## 2: Machine Learning for Linear Regression
 
-## Chapter 2: Machine Learning for Regression
-
-* Creating a car-price prediction project with a linear regression model
-* Doing an initial exploratory data analysis with Jupyter notebooks
-* Setting up a validation framework 
-* Implementing the linear regression model from scratch
-* Performing simple feature engineering for the model
-* Keeping the model under control with regularization
-* Using the model to predict car prices
+* Создание проекта предсказания цен на автомобили с использованием модели линейной регрессии
+* Проведение первичного исследовательского анализа данных 
+* Настройка валидационной структуры
+* Реализация модели линейной регрессии
+* Выполнение простой обработки признаков для модели
+* Тюнинг модели с использованием регуляризации
+* Использование модели для прогнозирования цен на автомобили
 
 
 
-## Chapter 3: Machine Learning for Classification and Evaluation Metrics for Classification
+## 3: Машинное обучение для классификации и метрики оценки классификации
 
-* Predicting customers who will churn with logistic regression
-* Doing exploratory data analysis for identifying important features
-* Encoding categorical variables to use them in machine learning models
-* Using logistic regression for classification
-
-
-## Chapter 4: Evaluation Metrics for Classification
-
-* Accuracy as a way of evaluating binary classification models and its limitations
-* Determining where our model makes mistakes using a confusion table
-* Deriving other metrics like precision and recall from the confusion table
-* Using ROC and AUC to further understand the performance of a binary classification model 
-* Cross-validating a model to make sure it behaves optimally
-* Tuning the parameters of a model to achieve the best predictive performance
+* Прогнозирование оттока клиентов, которые могут отказаться от услуг, с помощью логистической регрессии
+* Проведение исследовательского анализа данных для выявления важных признаков
+* Кодирование категориальных переменных для их использования в моделях машинного обучения
+* Использование логистической регрессии для классификации
+* Оценка бинарных моделей классификации с помощью метрики “accuracy” 
+* Анализ ошибок модели с использованием матрицы ошибок (confusion matrix)
+* Вычисление других метрик, таких как “precision” и “recall”, на основе матрицы ошибок
+* Использование ROC-кривой и AUC для более глубокого понимания работы бинарной модели классификации
+* Проведение кросс-валидации модели для проверки её оптимального поведения
+* Настройка параметров модели для достижения наилучшей результативности модели
 
 
-## Chapter 5: Deploying Machine Learning Models
+## 5: Развёртывание моделей машинного обучения
 
-* Saving models with Pickle
-* Serving models with Flask
-* Managing dependencies with Pipenv
-* Making the service self-contained with Docker
-* Deploying it to the cloud using AWS Elastic Beanstalk
-
-
-## Chapter 6: Decision Trees and Ensemble Learning
-
-* Predicting the risk of default with tree-based models
-* Decision trees and the decision tree learning algorithm
-* Random forest: putting multiple trees together into one model
-* Gradient boosting as an alternative way of combining decision trees 
+* Сохранение моделей с использованием Pickle
+* Развёртывание моделей с использованием Flask
+* Управление зависимостями с помощью Pipenv
+* Создание контейнеризированного сервиса с использованием Docker
+* Развёртывание в облаке с использованием AWS Elastic Beanstalk
 
 
-## Chapter 7: Neural Networks and Deep Learning
+## 6: Деревья решений и ансамблевое обучение
 
-* Convolutional neural networks for image classification 
-* TensorFlow and Keras — frameworks for building neural networks 
-* Using pre-trained neural networks
-* Internals of a convolutional neural network
-* Training a model with transfer learning
-* Data augmentations — the process of generating more training data
+* Прогнозирование риска дефолта с использованием моделей на основе деревьев
+* Деревья решений и алгоритм обучения деревьев решений
+* Случайный лес: объединение нескольких деревьев в одну модель
+* Градиентный бустинг как альтернативный способ объединения деревьев решений
 
 
-## Chapter 8: Serverless Deep Learning
+## 7: Нейронные сети и глубокое обучение
 
-* Serving models with TensorFlow-Lite — a light-weight environment for applying TensorFlow models
-* Deploying deep learning models with AWS Lambda
-* Exposing the Lambda function as a web service via API Gateway
+* Сверточные нейронные сети для классификации изображений
+* TensorFlow и Keras — фреймворки для создания нейронных сетей
+* Использование предварительно обученных нейронных сетей
+* Архитектура свёрточной нейронной сети
+* Обучение модели с применением техники transfer learning
+* Data augmentations — процесс генерации дополнительных обучающих данных
 
 
-## Chapter 9: Kubernetes and Kubeflow 
+## 8: Бессерверное глубокое обучение
+
+* Развёртывание моделей с использованием TensorFlow-Lite — лёгкой среды для применения моделей TensorFlow
+* Развёртывание моделей глубокого обучения с использованием AWS Lambda
+* Реализация Lambda-функции в виде веб-сервиса через API Gateway
+
+
+## 9: Kubernetes и Kubeflow 
 
 Kubernetes:
 
-* Understanding different methods of deploying and serving models in the cloud.
-* Serving Keras and TensorFlow models with TensorFlow-Serving
-* Deploying TensorFlow-Serving to Kubernetes
+* Изучение различных методов развёртывания и предоставления моделей в облаке
+* Развёртывание моделей Keras и TensorFlow с использованием TensorFlow-Serving
+* Развёртывание TensorFlow-Serving в Kubernetes
 
 Kubeflow:
 
-* Using Kubeflow and KFServing for simplifying the deployment process
+* Использование Kubeflow и KFServing для упрощения процесса развёртывания
 
 
 
